@@ -1481,12 +1481,9 @@
     "@babel/helper-validator-identifier" "^7.22.20"
     to-fast-properties "^2.0.0"
 
-"@brightlayer-ui/angular-components@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/@brightlayer-ui/angular-components/-/angular-components-8.1.0.tgz#b5ea65b1094147ec06b09060b60c3e0ed80b91aa"
-  integrity sha512-RCp28fDPGf/EnBiBkxaSXSjhl4bm8QZapvvzJJFxByYvTor+wubRv27gah+udkyM0ufzZ1e6myLQ7fqCEsMQSw==
-  dependencies:
-    tslib "^2.3.0"
+"@brightlayer-ui/angular-components@github:DimitriDessus-eaton/blui-angular-component-library#upgrade/angular":
+  version "9.0.0"
+  resolved "https://codeload.github.com/DimitriDessus-eaton/blui-angular-component-library/tar.gz/c54ce5d949827a5cb06296c2fa51525e58b329ef"
 
 "@brightlayer-ui/angular-themes@^8.1.0":
   version "8.1.0"
