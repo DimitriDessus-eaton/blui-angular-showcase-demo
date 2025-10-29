@@ -58,7 +58,7 @@
         }
     }
 
-    .data-card.mat-card {
+    .data-card.mat-mdc-card {
         padding: 0;
     }
 
@@ -70,16 +70,18 @@
         .blui-score-card-header-background {
             background-image: url('../../../../assets/topology_40.png');
         }
-        .mat-list-base {
+        .mat-mdc-list-base {
             padding: 16px 0px !important;
         }
+        /* TODO(mdc-migration): The following rule targets internal classes of list that may no longer apply for the MDC version. */
         .blui-score-card-body .mat-list-item-content {
             height: 36px !important;
         }
+        /* TODO(mdc-migration): The following rule targets internal classes of list that may no longer apply for the MDC version. */
         .mat-list-text {
             padding-left: 0px !important;
         }
-        .mat-list-base .mat-list-item .mat-list-icon {
+        .mat-mdc-list-base .mat-mdc-list-item .mat-mdc-list-item-icon {
             min-width: 56px;
         }
         .blui-info-list-item-title {

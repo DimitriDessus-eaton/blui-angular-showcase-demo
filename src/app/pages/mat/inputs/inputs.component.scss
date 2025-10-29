@@ -31,7 +31,7 @@
     }
 }
 
-.mat-checkbox {
+.mat-mdc-checkbox {
     display: flex;
 }
 .checkbox-demo,
@@ -41,6 +41,7 @@
     }
 }
 
+/* TODO(mdc-migration): The following rule targets internal classes of select that may no longer apply for the MDC version. */
 .mat-select-demo {
     > div {
         margin: 16px 0;
