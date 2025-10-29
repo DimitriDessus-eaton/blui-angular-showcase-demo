@@ -7,7 +7,7 @@
  **/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 //brightlayer-ui modules
@@ -63,10 +63,9 @@ import { BluiModule } from './pages/blui/blui.module';
 import { MatModule } from './pages/mat/mat.module';
 import { SettingsComponent } from './pages/templates/settings/settings.component';
 
-@NgModule({
-    declarations: [AppComponent, DashboardComponent, DrawerComponent, AlarmsComponent, SettingsComponent],
-    imports: [
-        MatRippleModule,
+@NgModule({ declarations: [AppComponent, DashboardComponent, DrawerComponent, AlarmsComponent, SettingsComponent],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA], imports: [MatRippleModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         BrowserModule,
@@ -76,7 +75,6 @@ import { SettingsComponent } from './pages/templates/settings/settings.component
         MatCardModule,
         MatListModule,
         MatButtonModule,
-        HttpClientModule,
         ReactiveFormsModule,
         MatButtonToggleModule,
         MatCheckboxModule,
@@ -114,10 +112,5 @@ import { SettingsComponent } from './pages/templates/settings/settings.component
         RouterModule,
         AppBarModule,
         BluiModule,
-        MatModule,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA],
-})
+        MatModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
