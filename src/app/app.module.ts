@@ -63,9 +63,12 @@ import { BluiModule } from './pages/blui/blui.module';
 import { MatModule } from './pages/mat/mat.module';
 import { SettingsComponent } from './pages/templates/settings/settings.component';
 
-@NgModule({ declarations: [AppComponent, DashboardComponent, DrawerComponent, AlarmsComponent, SettingsComponent],
+@NgModule({
+    declarations: [AppComponent, DashboardComponent, DrawerComponent, AlarmsComponent, SettingsComponent],
     bootstrap: [AppComponent],
-    schemas: [CUSTOM_ELEMENTS_SCHEMA], imports: [MatRippleModule,
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    imports: [
+        MatRippleModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         BrowserModule,
@@ -112,5 +115,8 @@ import { SettingsComponent } from './pages/templates/settings/settings.component
         RouterModule,
         AppBarModule,
         BluiModule,
-        MatModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        MatModule,
+    ],
+    providers: [provideHttpClient(withInterceptorsFromDi())],
+})
 export class AppModule {}

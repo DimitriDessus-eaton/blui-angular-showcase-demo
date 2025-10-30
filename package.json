@@ -30,7 +30,7 @@
     "@angular/platform-browser-dynamic": "^18.2.14",
     "@angular/router": "^18.2.14",
     "@brightlayer-ui/angular-components": "github:DimitriDessus-eaton/blui-angular-component-library#upgrade/angular",
-    "@brightlayer-ui/angular-themes": "file:../..",
+    "@brightlayer-ui/angular-themes": "github:DimitriDessus-eaton/blui-angular-themes#upgrade/angular",
     "@brightlayer-ui/colors": "^3.1.1",
     "@brightlayer-ui/icons": "^2.1.0",
     "@brightlayer-ui/icons-svg": "^1.15.0",
